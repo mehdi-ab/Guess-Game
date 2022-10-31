@@ -6,6 +6,13 @@ body {
     color: #fff;
     font-family: 'VT323', monospace;
     font-size: 22px;
+    padding: 0 10px;
+}
+
+.haut {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 #again {
@@ -13,10 +20,6 @@ body {
     height: 50px;
     font-family: 'VT323', monospace;
     font-size: 40px;
-}
-
-.btw {
-    float: right;
 }
 
 h1 {
