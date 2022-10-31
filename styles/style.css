@@ -14,7 +14,7 @@ body {
     background-color: rgb(34, 34, 34);
     color: #fff;
     font-family: 'Press Start 2P', sans-serif;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 /** HEADER */
@@ -72,3 +72,53 @@ h1 {
 }
 
 /** GAME */
+.game {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+#input-guess {
+    width: 170px;
+    height: auto;
+    background: rgb(34, 34, 34);
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    border: 4px solid #fff;
+    font-family: 'VT323', monospace;
+    padding: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button {  
+    width: 10px;
+    height: 40px;
+    margin: auto;
+}
+
+
+#check {
+    width: 130px;
+    height: 50px;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.infos, #verif, #score, #highscore {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#verif {
+    margin-bottom: 60px;
+}
+
+#score {
+    margin-bottom: 10px;
+}
