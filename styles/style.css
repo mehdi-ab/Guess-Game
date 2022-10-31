@@ -1,0 +1,25 @@
+/*  font-family: 'VT323', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+}
+
+#again {
+    width: 150px;
+    height: 50px;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+}
+
+.btw {
+    float: right;
+}
+
+h1 {
+    text-align: center;
+    font-size: 90px;
+}
