@@ -5,34 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="./script.js" defer></script>
     <title>Guess Game</title>
 </head>
 <body>
     <header>
         <div class="haut">
-            <input type="button" value="Again!" id="again">
+            <input type="button" value="Again!" class="again">
             <span class="btw">(Between 1 and 20)</span>
         </div>
         <h1>Guess My Number !</h1>
         <div class="result-container">
             <div class="border"></div>
-            <div id="result">?</div>
+            <div class="result">?</div>
         </div>
     </header>
 
     <section class="game">
         <form>
-            <input type="number" name="guess" id="input-guess" min="1" max="20">
+            <input type="number" name="guess" class="input-guess" min="1" max="20">
             <br>
-            <input type="button" value="Check!" id="check">
+            <input type="button" value="Check!" class="check">
         </form>
 
         <div class="infos">
-            <div id="verif">Start guessing...</div>
-            <div id="score">💯 Score: </div>
-            <div id="highscore">🥇 Highscore:</div>
+            <p class="verif" id="reset">Start guessing...</p>
+            <p class="label-score">💯 Score: <span class="score">20</span></p>
+            <p class="label-highscore">🥇 Highscore: <span class="highscore">0</span></p>
         </div>
     </section>  
+
+    <script src="./script.js"></script>
 </body>
 </html>

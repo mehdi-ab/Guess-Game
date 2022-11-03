@@ -26,7 +26,7 @@ body {
     margin-bottom: 50px;
 }
 
-#again {
+.again {
     width: 150px;
     height: 50px;
     font-family: 'Press Start 2P', sans-serif;
@@ -58,7 +58,7 @@ h1 {
 }
 
 
-#result {
+.result {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@ h1 {
     width: 100%;
 }
 
-#input-guess {
+.input-guess {
     width: 170px;
     height: auto;
     background: rgb(34, 34, 34);
@@ -100,7 +100,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 
-#check {
+.check {
     width: 130px;
     height: 50px;
     font-family: 'Press Start 2P', sans-serif;
@@ -109,16 +109,16 @@ input[type=number]::-webkit-inner-spin-button {
     margin-top: 20px;
 }
 
-.infos, #verif, #score, #highscore {
+.infos {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
-#verif {
+.verif {
     margin-bottom: 60px;
 }
 
-#score {
+.label-score {
     margin-bottom: 10px;
 }
