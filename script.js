@@ -8,7 +8,6 @@ const gameScore = document.querySelector('.score');
 const win = document.querySelector('.result');
 const body = document.querySelector('body');
 let highScore = document.querySelector('.highscore'); 
-
 let score = 20;
 let initialHighScore = 0;
 
@@ -43,29 +42,18 @@ document.querySelector('.check').addEventListener('click', function () {
         }
     
     // Si le nombre est plus petit
-    } else if (guess < secretNumber) {
-        // Condition pour ne pas aller en dessous de 0 
+    } else if (guess !== secretNumber) {
         if (score > 1) {
-            message.textContent = '📉 To low';
+            message.textContent = guess < secretNumber ?  message.textContent = '📉 To low' : message.textContent = '📈 To high';
             score--;
             gameScore.textContent = score;
         } else {
             message.textContent = '💥 Game over';
             gameScore.textContent = '0';
         }
-
-    // Si le nombre est plus grand
-    } else if (guess > secretNumber) {
-        // Condition pour ne pas aller en dessous de 0 
-        if (score > 1) {
-        message.textContent = '📈 To high';
-        score--;
-        gameScore.textContent = score; 
-        }else {
-            message.textContent = '💥 Game over';
-            gameScore.textContent = '0';
-        }
     }
+    
+    //  
 
 });
 
